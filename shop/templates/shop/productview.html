@@ -1,0 +1,37 @@
+
+{% extends 'shop/basic.html' %}
+
+
+{% block title %}
+Product page
+{% endblock title %}
+
+
+{% block js %}
+
+
+    
+{% endblock js %}
+
+
+{% block body %}
+<div class="container">
+    <div class="row my-4">
+        <div class="col-md-4">
+            <img class="img-fluid" src="/media/{{products.images}}" alt="{{products.product_name}}">
+            <div class="row">
+                <button class="btn btn-primary my-3 mx-3" type="button">Add to cart</button>
+                <button class="btn btn-primary my-3 mx-3" type="button">Buy Now</button>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <h5>{{products.product_name}}</h5>
+            <h5><b>&#8377;  </b> {{products.price}}</h5>
+            <h5>{{products.product_dec}}</h5>
+        </div>
+    </div>
+</div>
+{% endblock body %}
+    
+    
+    
